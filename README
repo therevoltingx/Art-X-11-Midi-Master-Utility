@@ -1,0 +1,45 @@
+Basically I bought an ART X-11 MIDI MASTER pedal board hoping that I could control my guitar effects with it using Controller Commands.
+Turns out it only sent Channel Change when I pressed a button, and a sysex message when I depressed it. >_<
+So I wrote this piece of software to fully utilize its potential.
+
+Question/Comments/Suggestions/etc:
+Miguel Morales: therevoltingx@gmail.com
+
+x-11-mm compiles on Linux, Mac OS X, and Windows.  
+
+Simply edit the make file and uncomment the lines specified for your OS.
+
+Then run make from the command line.
+
+Linux:
+--------------------------------------------------------
+Requirements:
+alsa-devel
+
+Compiling:
+Edit Makefile, and run make.
+########################################################
+
+Mac OS X:
+-------------------------------------------------------
+Requirements:
+XCode framework
+
+Compiling:
+Edit Makefile, and run make.
+
+#########################################################
+
+Windows:
+-------------------------------------------------------
+Notes: I was easily able to compile using the free MinGW compiler.
+
+Requirements:
+C++ compiler
+
+Compiling:
+You can compile using any compiler simply by linking it to the winmm library.
+If you have MinGW installed simply run make.
+
+#########################################################
+
